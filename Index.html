@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+    <link rel=StyleSheet href="assets/estilos/nysl_style.css" type="text/css">
+</head>
+<body>
+	
+       <div class="row">
+      		<h1>Northside Young Soccer League</h1>
+ 	<div id=menu> 
+     		<button class="home"><a id="link-nav" href="index.html">Home</a></button>
+     		<button class="about"><a id="link-nav" href="../pages/about.html">About</a></button>
+     		<button class="form">Registration</button>
+     		<button class="game"><a id="link-nav" href="../pages/game_info.html">Information Game</button>
+     		<button class="rules"><a id="link-nav" href="../pages/rules.html">Rules</a></button>
+     		<button class="contact"><a id="link-nav" href="../pages/contact.html">Contact</a></button>		
+ 	</div>
+
+    	<img class="img-banner" src="./assets/images/design2_image1.jpg" />
+    	<div class="centrado"><b>Registration NYSL</b></div>
+    	<div class="row">
+      	<div class="logo" >
+        	<img class="img-logo" src="./assets/images/nysl_logo.png" />
+      	</div>
+        <br><br><br><br>
+	
+	       <form action="#" method="post">
+	          <div class="grid_container">	
+			<div class="grid-item item1"><h2>Formulario de Registro</h2></div>	
+	    		<div class="grid-item item2"><b>* Nombre del jugador:</b><br><input placeholder="Ingresa nombre" class="tam_textbox" type="text" name="nombre" id="nombre" minlength="3" maxlength="15" required autofocus /></div>
+            		<div class="grid-item item3"><b>* Apellido:</b><br><input placeholder="Ingresa apellido" class="tam_textbox" type="text" name="apellido" id="apellido" minlength="3" maxlength="30" required /></div>
+            		<div class="grid-item item4"><b>* Dirección:</b><br><input placeholder="Ingresa tu direccion" class="tam_textbox1" type="text" name="direccion" id="direccion" maxlength="150" required/></div> 
+            		<div class="grid-item item5"><b>* Ciudad:</b><br><input placeholder="Ingresa tu ciudad" class="tam_textbox" type="text" name="ciudad" id="ciudad" maxlength="30" required/></div>
+                        <div class="grid-item item6"><b>* Código Postal:</b><br><input placeholder="Ingresa el codigo postal de tu zona" class="tam_textbox" type="number" name="codigo_postal" id="codigo_postal" required/></div> 
+                        <div class="grid-item item7><b>* Fecha Nac. (mm/dd/aaaa):</b><br><input placeholder="Ingresa su f. Nac." type="date" name="fnac" id="fnac" required/></div>
+                        <div class="grid-item item8"><b>* Género:</b><br> Femenino <input value="Femenino" type="radio" name="genero" id="radio_fem" required> Masculino <input value="Masculino" type="radio" name="genero" id="radio_masc" required></div>                                          
+                        <div class="grid-item item9"><label for="grade"><b>Grado:</b></label>
+                           <select id="grade" name="grade">
+                		<option value="pre">Pre-School</option>
+                		<option value="1">1st</option>
+                		<option value="2">2nd</option>
+                		<option value="3">3rd</option>
+                		<option value="4">4th</option>
+                		<option value="5">5th</option>
+              		   </select> 
+	                   <b id="question">¿De que escuela vives mas cerca?</b><br><label for="school">Escuela más cercana:<br></label>
+              			<select id="school" name="school">
+                		<option value="aj">AJ Katzenmaier</option>
+                		<option value="greenbay">Greenbay</option>
+                		<option value="marjorie"> Marjorie P Hart</option>
+                		<option value="north">North Elementary</option>
+                		<option value="south">South Elementary</option>
+                		<option value="howard">Howard A. Yeager</option>
+              		   </select><br>
+			   <b id="question">¿Qué posición(es) juegas normalmente? (marque todas las que correspondan)</b><br>
+				Delantero <input value="Forward" type="checkbox"> 
+				Defensa <input value="Defense" type="checkbox"> 
+				Mediocampo <input value="Midfield" type="checkbox"> 
+				Portero <input value="Goalkeeper" type="checkbox">
+			</div>
+        	        <div class="grid-item item10"><h3>Permiso para jugar</h3><br>Yo, el padre o tutor del 
+				solicitante de registro menor, estoy de acuerdo en que el solicitante de registro y
+		    		yo acataremos todas las reglas de la Northside Youth Soccer League (NYSL). Al reconocer la posibilidad
+	   	    		de lesiones físicas asociadas al fútbol y en consideración a la"Liga" que acepta al solicitante de registro
+		    		para sus programas y actividades de fútbol, Por la presente libero y descargo a NYSL, sus empleados y
+                    		personal asociado y voluntarios, incluyendo las instalaciones utilizadas para prácticas y juegos, contra
+                    		cualquier reclamo por o en nombre del solicitante de registro como resultado de la participación del
+                    		solicitante del programa a o en el transporte desde o hacia las actividades patrocinadas por NYSL.<br><br>
+		    		Al firmar a continuación, acuerdo y autorizo lo anterior. Además, al firmar a continuación, reconozco
+		    		que he leído la política de cancelación y acepto sus términos.<br></div>
+                       <div class="grid-item item11"><b>* Firma Padre/Tutor:</b><br><input placeholder="Firma Padre/Tutor:" type="text" id="fparent" name="fparent" required></div>
+                       <div class="grid-item item12"><b>* Fecha:</b><br><input type="date" id="date" name="date" required></div>
+                       <div class="grid-item item13"><input type="submit" value="Send"></div>
+		       <br>                    		  	           
+	  	   </div>
+             </form>
+    </body>
+</html>
